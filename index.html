@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Student Learning & Feedback Portal">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Learning & Feedback Portal</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🎓 Student Learning & Feedback Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#video">Learning Video</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" aria-label="About section">
+      <h2>About This Portal</h2>
+      <article>
+        <p>Welcome to the <strong>Student Learning & Feedback Portal</strong> — a space to <em>learn, explore, and share</em> your educational experiences.</p>
+        <p>We believe in <q>Learning by Doing</q>. Watch lessons, explore resources, and give your valuable feedback to improve learning for everyone.</p>
+      </article>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section id="courses" aria-label="Courses section">
+      <h2>Available Courses &#127891;</h2>
+      <p>Here are some popular courses with their prices (inclusive of GST &#x20B9;):</p>
+
+      <table border="1" cellpadding="5" cellspacing="0">
+        <caption>Our Top Courses</caption>
+        <thead>
+          <tr>
+            <th>Course Name</th>
+            <th>Duration</th>
+            <th>Price (&#8377;)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML & Web Structure</td>
+            <td>1 Month</td>
+            <td>&#8377; 2,499</td>
+          </tr>
+          <tr>
+            <td>CSS Styling & Design</td>
+            <td>1.5 Months</td>
+            <td>&#8377; 3,499</td>
+          </tr>
+          <tr>
+            <td>JavaScript for Beginners</td>
+            <td>2 Months</td>
+            <td>&#8377; 4,999</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Note: Students can avail a <mark>10% discount</mark> if they enroll for 2 or more courses!</p>
+    </section>
+
+    <!-- LEARNING VIDEO SECTION -->
+    <section id="video" aria-label="Video section">
+      <h2>Watch & Learn 📺</h2>
+      <figure>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/pQN-pnXPaVg"
+          title="YouTube HTML Learning Video"
+          allowfullscreen>
+        </iframe>
+        <figcaption>Watch this tutorial to start your HTML journey!</figcaption>
+      </figure>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" aria-label="Gallery section">
+      <h2>Our Learning Gallery 🖼️</h2>
+      <figure>
+        <img src="html-logo.png" alt="HTML Logo" width="200" height="200">
+        <figcaption>HTML - The foundation of the web</figcaption>
+      </figure>
+      <figure>
+        <img src="student-learning.jpg" alt="Student learning online" width="250" height="180">
+        <figcaption>Interactive online classes</figcaption>
+      </figure>
+      <figure>
+        <img src="project-presentation.jpg" alt="Students presenting projects" width="250" height="180">
+        <figcaption>Student project presentations</figcaption>
+      </figure>
+    </section>
+
+    <!-- LOCATION SECTION -->
+    <section id="location" aria-label="Location section">
+      <h2>Visit Our Learning Center 🗺️</h2>
+      <p>We are located at:</p>
+      <address>
+        2nd Floor, KodeZ Academy,<br>
+        Near City Mall, Hyderabad, India<br>
+        📞 +91-9876543210
+      </address>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.2430162402375!2d78.47466441487538!3d17.395508988078526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba1a8db79f31d%3A0x7f6cc1a7f5dc0b5!2sHyderabad!5e0!3m2!1sen!2sin!4v1690000000000"
+        width="600" height="300" style="border:0;" allowfullscreen loading="lazy"
+        title="Google Map showing KodeZ Academy location">
+      </iframe>
+    </section>
+
+    <!-- AUDIO SECTION -->
+    <section id="audio" aria-label="Audio section">
+      <h2>Listen to HTML Tips 🎧</h2>
+      <audio controls>
+        <source src="html_tips.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- FEEDBACK FORM SECTION -->
+    <section id="feedback" aria-label="Feedback form section">
+      <h2>📝 Student Feedback Form</h2>
+      <form action="submit_feedback.html" method="post" autocomplete="on">
+        
+        <fieldset>
+          <legend>👤 Student Information</legend>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="fullname" placeholder="Enter your name" required><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+          <label for="course">Select Course:</label>
+          <input list="courses" id="course" name="course">
+          <datalist id="courses">
+            <option value="HTML & Web Structure">
+            <option value="CSS Styling & Design">
+            <option value="JavaScript for Beginners">
+          </datalist><br><br>
+
+          <label for="join-date">Join Date:</label>
+          <input type="date" id="join-date" name="join-date"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>💬 Feedback Details</legend>
+          <label for="rating">Rate Your Experience (1–10):</label>
+          <input type="range" id="rating" name="rating" min="1" max="10" value="5"><br><br>
+
+          <p>Would you recommend this course?</p>
+          <input type="radio" id="yes" name="recommend" value="yes" required>
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="recommend" value="no">
+          <label for="no">No</label><br><br>
+
+          <label for="photo">Upload Your Project Screenshot:</label>
+          <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+          <label for="comments">Your Comments:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write your feedback..." required></textarea><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit Feedback">
+        <input type="reset" value="Clear Form">
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 KodeZ Academy; | All Rights Reserved</p>
+    <p>Follow us on: 
+      <a href="https://www.youtube.com/@KodeZAcademy" target="_blank">YouTube</a> |
+      <a href="mailto:support@kodezacademy.com">Email Us</a>
+    </p>
+  </footer>
+
+</body>
+</html>
